@@ -1,0 +1,5 @@
+com\igeek\egobuy\search\message\ItemChangeListener.class
+com\igeek\egobuy\search\service\dao\SearchDAO.class
+com\igeek\egobuy\search\message\MyMessageListener.class
+com\igeek\egobuy\search\service\impl\SearchItemServiceImpl.class
+com\igeek\egobuy\search\mapper\SearchItemMapper.class

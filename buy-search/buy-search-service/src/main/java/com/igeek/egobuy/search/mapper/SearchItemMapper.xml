@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.igeek.egobuy.search.mapper.SearchItemMapper">
+	<select id="getSerachItemList" resultType="com.igeek.egobuy.common.pojo.SearchItem">
+		SELECT
+			item.id,
+			item.title,
+			item.image,
+			item.sell_point sellPoint,
+			item.price,
+			cat.NAME categoryName
+		FROM
+			tb_item item
+		LEFT JOIN tb_item_cat cat ON item.cid = cat.id
+		WHERE
+			item.STATUS = 1
+	</select>
+	
+	<select id="getSearchItemById" resultType="com.igeek.egobuy.common.pojo.SearchItem" parameterType="long">
+		SELECT
+			item.id,
+			item.title,
+			item.image,
+			item.sell_point sellPoint,
+			item.price,
+			cat.NAME categoryName
+		FROM
+			tb_item item
+		LEFT JOIN tb_item_cat cat ON item.cid = cat.id
+		WHERE
+			item.STATUS = 1
+		AND item.id = #{itemid}
+	</select>
+</mapper>

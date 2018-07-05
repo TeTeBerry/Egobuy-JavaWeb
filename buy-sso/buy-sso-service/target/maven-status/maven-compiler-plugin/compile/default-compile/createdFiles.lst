@@ -1,0 +1,3 @@
+com\igeek\egobuy\sso\service\impl\LoginServiceImpl.class
+com\igeek\egobuy\sso\service\impl\RegisterServiceImpl.class
+com\igeek\egobuy\sso\service\impl\TokenServiceImpl.class

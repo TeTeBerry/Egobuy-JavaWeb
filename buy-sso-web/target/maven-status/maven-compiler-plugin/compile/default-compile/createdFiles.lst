@@ -1,0 +1,4 @@
+com\igeek\egobuy\sso\controller\ShowPageController.class
+com\igeek\egobuy\sso\controller\TokenController.class
+com\igeek\egobuy\sso\controller\LoginController.class
+com\igeek\egobuy\sso\controller\RegisterController.class
